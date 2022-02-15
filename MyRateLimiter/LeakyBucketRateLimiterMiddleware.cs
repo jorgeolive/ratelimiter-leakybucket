@@ -15,17 +15,13 @@
 
             if (bucket.TryEnqueue(semaphore))
             {
-                // esperare a que mi LeakyBucket me de paso
                 await semaphore.WaitAsync();
                 await _next(context);
-                //
             }
             else
             {
-                context.Response.StatusCode = 429;
+                context.Response.StatusCode = 503;
             }
-
-            //cortocircuitar el middleware y contestar con un 503 / 429. 
         }
     }
 }
