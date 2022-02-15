@@ -39,7 +39,7 @@ namespace Api
             {
                 _timerSemaphore.Release();
             } 
-            catch (Exception ex)
+            catch (Exception)
             {
 
             } 
