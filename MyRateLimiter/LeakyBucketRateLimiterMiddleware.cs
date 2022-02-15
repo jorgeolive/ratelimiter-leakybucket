@@ -1,4 +1,4 @@
-﻿namespace MyRateLimiter
+﻿namespace Api
 {
     public class LeakyBucketRateLimiterMiddleware
     {

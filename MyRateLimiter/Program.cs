@@ -1,4 +1,4 @@
-using MyRateLimiter;
+using Api;
 
 var builder = WebApplication.CreateBuilder(args);
 

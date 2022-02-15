@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.Timers;
 
-namespace MyRateLimiter
+namespace Api
 {
     public class LeakyBucket
     {
